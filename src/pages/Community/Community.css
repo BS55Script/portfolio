@@ -1,0 +1,330 @@
+/* Container and general layout */
+.community-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.community-card {
+  display: flex;
+  align-items: stretch; /* Ensures equal height of children */
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.community-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+  flex: 1;
+  max-width: 500px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+  height: 100%; /* Fill available space */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Make image wrapper stretch */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill container without distortion */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+/* Info section */
+.community-info {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Match height of sibling */
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.community-info h2 {
+  font-size: 1.8rem;
+  color: #0a74da;
+  margin-bottom: 1rem;
+}
+
+.community-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-height: 5.5rem;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.community-description.expanded {
+  max-height: 1000px;
+}
+
+.community-info ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.community-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* Awards section */
+.community-awards h4 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background-color: #0a74da;
+  color: white;
+  padding: 0.6rem 0.8rem; /* Reduced padding */
+  font-size: 0.85rem;     /* Slightly smaller font */
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  display: inline-block;
+  user-select: none; 
+  max-width: 150px;      /* Removes any default button width */
+}
+
+
+.toggle-btn:hover {
+  background-color: #054c9e;
+}
+
+/* Pagination */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination-controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0a74da;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #054c9e;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #f2f2f2;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Zoom Overlay */
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.zoom-image-container {
+  position: relative;
+  max-width: 40vw;
+  max-height: 80vh;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeInZoom 0.3s ease;
+}
+
+.zoomed-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  background: #ff5a5a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .community-info {
+    text-align: left;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .community-card {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+  .community-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .community-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zoom-image-container {
+    max-width: 90vw;
+  }
+
+  .pagination-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .community-description {
+    font-size: 0.9rem;
+  }
+
+  .community-info ul {
+    padding-left: 1rem;
+  }
+}

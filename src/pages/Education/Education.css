@@ -1,0 +1,158 @@
+.education-wrapper {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+  }
+  
+  .education-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: #0a74da;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Timeline container */
+  .timeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: linear-gradient(180deg, #0a74da, #3a9bf9);
+    transform: translateX(-50%);
+  
+  }
+  
+  /* Timeline items */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    margin-bottom: 4rem;
+    background: #f9f9ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    
+    animation: fadeSlideUp 0.8s ease forwards;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  /* Dots */
+  .circle {
+    position: absolute;
+    top: 24px;
+    width: 18px;
+    height: 18px;
+    background: #0a74da;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(10, 116, 218, 0.5);
+    z-index: 3;
+  }
+  
+  .timeline-item.left .circle {
+    right: -10px;
+  }
+  
+  .timeline-item.right .circle {
+    left: -10px;
+  }
+  
+  /* Card content */
+  .timeline-item h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #0a74da;
+    text-transform: uppercase;
+  }
+  
+  .timeline-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .timeline-item p {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Animation */
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .Efooter {
+    width: 100vw;           /* Full viewport width */
+    box-sizing: border-box; /* Avoid horizontal scroll */
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    /* height adjusts automatically based on content */
+    /* remove any fixed height or positioning */
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 8px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      left: 0 !important;
+      margin-left: 10px;
+      text-align: left;
+      padding-left: 2.5rem;
+    }
+  
+    .timeline-item .circle {
+      left:-5px !important;
+      right: auto;
+    }
+  
+    .timeline-item h2,
+    .timeline-item h4,
+    .timeline-item p {
+      text-align: left;
+    }
+  }
+  
