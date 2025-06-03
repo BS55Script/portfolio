@@ -44,7 +44,7 @@ const HireMeForm = ({ onClose }) => {
 
     if (userConfirmed) {
       const whatsappMessage = `Hello, I'm ${formData.name}. My email is ${formData.email}. Here's what I need help with: ${formData.message}`;
-      const whatsappNumber = process.env.REACT_APP_WHATSAPP_NUMBER || '+9779812044994';
+      const whatsappNumber ='+9779812044994';
       const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappLink, '_blank');
     }
