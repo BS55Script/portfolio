@@ -119,6 +119,7 @@
   }
   
   .about-text p {
+    word-spacing: -2px;
     font-size: 18px;
     line-height: 1.8;
     text-align: justify;
