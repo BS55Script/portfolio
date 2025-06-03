@@ -54,7 +54,7 @@ const certificationsData = [
     date: "June 2024",
     description:
       "Awarded for successfully completing the AWS Cloud Practitioner Essentials course, which provides a foundational understanding of cloud computing concepts and AWS services. The program covers core topics including AWS cloud infrastructure, security, pricing models, billing, and basic architectural principles. The recipient demonstrated knowledge of how to effectively navigate AWS services and leverage cloud technology to support business needs.",
-    image: "AWS4.jpeg",
+    image:"AWS4.jpg",
   },
 ];
 
