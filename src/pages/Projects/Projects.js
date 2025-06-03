@@ -15,7 +15,7 @@ const projectsData = [
           <li>Features <strong>pagination</strong> for browsing certifications and projects</li>
           <li>Organized and intuitive layout for easy navigation</li>
           <li><strong>Dynamically rendered content</strong> based on structured project data</li>
-          <li><strong>Hosted online</strong> for public access and demonstration</li>
+          <li><strong>Hosted online on AWS </strong> for public access and demonstration</li>
         </ul>
         <p>
           The website provides a professional and interactive way to present my achievements and skill set to potential employers, collaborators, and peers.
@@ -24,7 +24,7 @@ const projectsData = [
     ),
     technologies: ["React", "CSS", "Framer Motion"],
     images: ["pf1.jpg", "pf2.jpg", "pf3.jpg", "pf4.jpg", "pf5.jpg"],
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/BS55Script/portolio",
   },
   {
     title: "Blogging Website - The Voice Canvas",
