@@ -49,7 +49,7 @@ const communityData = [
         </ul>
       </>
     ),
-    images: ["LEO4.jpg,", "LEO2.jpg", "LEO3.jpg","LEO1.jpg"],
+    images: [ "LEO2.jpg", "LEO3.jpg","LEO1.jpg","LEO.jpg"],
     awards: ["Member OF The Month- August(2022)"]
   },
 ];
