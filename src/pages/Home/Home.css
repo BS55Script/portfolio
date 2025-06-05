@@ -207,7 +207,7 @@
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width:600px) {
     .about-text p {
       font-size: 16px;
     }
@@ -225,6 +225,7 @@
       width: 80%;
       max-width: 300px;
       margin: 2px;
+      margin-right: 30px;
       align-items: center;
       
     }
