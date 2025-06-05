@@ -205,9 +205,11 @@
     .home-content h1 {
       font-size: 28px;
     }
+    
+
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: px) {
     .about-text p {
       font-size: 16px;
     }
