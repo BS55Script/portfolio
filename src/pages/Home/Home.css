@@ -186,49 +186,51 @@
   }
   
   /* Responsive */
-  @media (max-width: 992px) {
-    .about-top {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .about-img {
-      width: 80%;
-      max-width: 300px;
-      margin-left: 17px;
-      align-items: center;
-    }
-  
-    .about-text {
-      max-width: 90vw;
-    }
-  
-    .home-content h1 {
-      font-size: 28px;
-    }
+/* Responsive for Tablets and Below (<= 992px) */
+@media (max-width: 992px) {
+  .about-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  @media (max-width:600px) {
-    .about-text p {
-      font-size: 16px;
-    }
-  
-    .hire-me-grid {
-      gap: 20px;
-    }
-     .home-buttons {
+
+  .about-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text {
+    max-width: 90vw;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+}
+
+/* Responsive for Small Screens (<= 600px) */
+@media (max-width: 600px) {
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .hire-me-grid {
+    gap: 20px;
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .home-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
-    .home-buttons .btn-hire,
-    .home-buttons .btn-Cv {
-      width: 80%;
-      max-width: 300px;
-      margin: 2px;
-      margin-right: 15px;
-      align-items: center;
-      
-    }
+
+  .home-buttons .btn-hire,
+  .home-buttons .btn-Cv {
+    width: 100%;
+    max-width: 300px;
+    margin: 6px 0; /* Vertical spacing only */
   }
+}
