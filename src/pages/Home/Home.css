@@ -197,7 +197,7 @@
   .about-img {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto 20px auto;
+    margin-left: 10mm;
     display: flex;
     justify-content: center;
   }
@@ -231,6 +231,7 @@
   .home-buttons .btn-Cv {
     width: 100%;
     max-width: 300px;
-    margin: 6px 0; /* Vertical spacing only */
+    margin: 2px 20px;
+    margin-right:5px;
   }
 }
