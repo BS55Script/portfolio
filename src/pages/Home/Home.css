@@ -219,11 +219,8 @@
     .home-buttons .btn-hire,
     .home-buttons .btn-Cv {
       width: 100%;
-      margin: 10px 0;
-    }
-  
-    .btn-Cv {
-      margin-left: 0;
+      /*margin: 2px 0;*/
+      align-items: center;
     }
   }
   
