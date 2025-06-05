@@ -301,7 +301,7 @@
   }
 
   .project-actions {
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     gap: 0.75rem;
     margin-top: 1rem;
