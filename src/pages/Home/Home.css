@@ -194,8 +194,10 @@
     }
   
     .about-img {
-      max-width: 60%;
-      margin-bottom: 20px;
+      width: 80%;
+      max-width: 300px;
+      margin-right: -25px;
+      align-items: center;
     }
   
     .about-text {
@@ -225,7 +227,7 @@
       width: 80%;
       max-width: 300px;
       margin: 2px;
-      margin-right: 25px;
+      margin-right: 20px;
       align-items: center;
       
     }
