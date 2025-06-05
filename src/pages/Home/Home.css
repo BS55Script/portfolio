@@ -205,11 +205,9 @@
     .home-content h1 {
       font-size: 28px;
     }
-    
-
   }
   
-  @media (max-width: px) {
+  @media (max-width: 600px) {
     .about-text p {
       font-size: 16px;
     }
@@ -217,12 +215,16 @@
     .hire-me-grid {
       gap: 20px;
     }
+     .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
   
     .home-buttons .btn-hire,
     .home-buttons .btn-Cv {
-      width: 100%;
+      width: 80%;
+      max-width: 300px;
       margin: 2px;
-      margin-right: 45px;
       align-items: center;
       
     }

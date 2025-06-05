@@ -105,7 +105,7 @@ const Projects = () => {
   return (
     <>
       <div className="projects-container">
-        <h1 className="projects-title">Projects</h1>
+        <h1 className="projects-title">PROJECTS COLLECTIONS</h1>
         {currentProjects.map((project, index) => {
           const globalIndex = indexOfFirstProject + index;
           const isExpanded = expanded[globalIndex];
