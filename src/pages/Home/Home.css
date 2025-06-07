@@ -10,9 +10,6 @@
     overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
     background-color: #f9f9f9;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
   }
   
   /* Home Section */
@@ -177,9 +174,6 @@
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 120, 215, 0.35);
   }
-  .page-wrapper {
-    flex: 1;
-  }
   
   /* Footer */
   .footer {
@@ -204,10 +198,9 @@
   .about-img {
     width: 100%;
     max-width: 300px;
+    margin-left: 9mm;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .about-text {
@@ -218,14 +211,10 @@
     font-size: 28px;
     margin-right: 10px;
   }
-  .footer {
-    font-size: 12px;
-    padding: 10px 0;
-  }
 }
 
 /* Responsive for Small Screens (<= 600px) */
-@media (max-width:500px ) {
+@media (max-width:500px) {
   .about-text p {
     font-size: 16px;
   }
@@ -244,12 +233,7 @@
   .home-buttons .btn-Cv {
     width: 58%;
     max-width: 300px;
-    margin: 5px ;
-    margin-left: 5px;
-  }
-  .footer {
-    font-size: 12px;
-    padding: 10px 0;
-  
+    margin: 2px ;
+    margin-left: 15px;
   }
 }

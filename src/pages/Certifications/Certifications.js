@@ -71,6 +71,7 @@ const Certifications = () => {
   const totalPages = Math.ceil(certificationsData.length / ITEMS_PER_PAGE);
 
   return (
+    <>
     <div className="cert-page-wrapper">
       <h1 className="cert-page-title">Certifications</h1>
 
@@ -140,12 +141,13 @@ const Certifications = () => {
         >
           Next
         </button>
+        </div>
       </div>
 
       <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Bhawani Prasad Sah. All rights reserved.</p>
       </footer>
-    </div>
+    </>
   );
 };
 
