@@ -212,6 +212,10 @@
     font-size: 28px;
     margin-right: 10px;
   }
+  .footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
 }
 
 /* Responsive for Small Screens (<= 600px) */
@@ -236,5 +240,9 @@
     max-width: 300px;
     margin: 5px ;
     margin-left: 5px;
+  }
+  .footer {
+    font-size: 12px;
+    padding: 10px 0;
   }
 }
