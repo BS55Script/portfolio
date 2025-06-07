@@ -198,9 +198,10 @@
   .about-img {
     width: 100%;
     max-width: 300px;
-    margin-left: 9mm;
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .about-text {
@@ -214,7 +215,7 @@
 }
 
 /* Responsive for Small Screens (<= 600px) */
-@media (max-width: 600px) {
+@media (max-width:fullscreen ) {
   .about-text p {
     font-size: 16px;
   }
@@ -233,7 +234,7 @@
   .home-buttons .btn-Cv {
     width: 58%;
     max-width: 300px;
-    margin: 2px ;
-    margin-left: 15px;
+    margin: 5px ;
+    margin-left: 5px;
   }
 }
