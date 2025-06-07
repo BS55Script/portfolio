@@ -198,7 +198,7 @@
   .about-img {
     width: 100%;
     max-width: 300px;
-    margin-left: 9mm;
+    margin-left: 4mm;
     display: flex;
     justify-content: center;
   }
@@ -214,7 +214,7 @@
 }
 
 /* Responsive for Small Screens (<= 600px) */
-@media (max-width:500px) {
+@media (max-width:600px) {
   .about-text p {
     font-size: 16px;
   }
@@ -231,9 +231,8 @@
 
   .home-buttons .btn-hire,
   .home-buttons .btn-Cv {
-    width: 58%;
+    width: 56%;
     max-width: 300px;
     margin: 2px ;
-    margin-left: 15px;
   }
 }
