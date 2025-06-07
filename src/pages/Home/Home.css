@@ -10,6 +10,9 @@
     overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
     background-color: #f9f9f9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   /* Home Section */
@@ -174,6 +177,9 @@
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 120, 215, 0.35);
   }
+  .page-wrapper {
+    flex: 1;
+  }
   
   /* Footer */
   .footer {
@@ -219,7 +225,7 @@
 }
 
 /* Responsive for Small Screens (<= 600px) */
-@media (max-width:fullscreen ) {
+@media (max-width:500px ) {
   .about-text p {
     font-size: 16px;
   }
@@ -244,5 +250,6 @@
   .footer {
     font-size: 12px;
     padding: 10px 0;
+  
   }
 }
