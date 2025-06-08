@@ -17,7 +17,7 @@ const certificationsData = [
     issuer: "Broadway Infosys",
     date: "June 2025",
     description:
-      "This certificate is awarded for the successful completion of a comprehensive training program in full stack web development using the MERN stack MongoDB, Express.js, React.js, and Node.js. The program covered front-end and back-end development, RESTful API design, database integration, user authentication, and deployment of real-world web applications. The recipient demonstrated practical skills through hands-on projects, showcasing the ability to build and deploy scalable, full-featured web solutions.",
+      "This certificate is awarded for the successful completion of a comprehensive training program in full stack web development using the MERN stack MongoDB, Express.js, React.js, and Node.js. The program duration was from Aug 2024 to Nov 2024 covered front-end and back-end development, RESTful API design, database integration, user authentication, and deployment of real-world web applications. The recipient demonstrated practical skills through hands-on projects, showcasing the ability to build and deploy scalable, full-featured web solutions.",
     image: "MERN.jpg",
   },
   {
