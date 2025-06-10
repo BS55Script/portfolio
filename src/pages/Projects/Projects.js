@@ -72,7 +72,7 @@ const projectsData = [
     ),
     technologies: ["PHP", "HTML", "CSS"],
     images: ["BTC1.jpg","BTC2.jpg","BTC4.jpg","BTC5.jpg","BTC6.jpg","BTC7.jpg","BTC8.jpg","BTC9.jpg"],
-    github: "https://github.com/yourusername/bookmyticket",
+    github: "https://github.com/BS55Script/BookMyTicket.com",
   }
   
 ];
