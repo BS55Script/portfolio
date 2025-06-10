@@ -57,10 +57,19 @@ const Home = () => {
             <button className="btn btn-hire" onClick={() => setShowHire(true)}>
               Hire Me
             </button>
-            <a
-             className="btn btn-Cv"href="/CV.pdf" download="Bhawani-Prasad-Sah(CV).pdf">
+            <button
+             className="btn btn-Cv"
+                 onClick={() => {
+                      const link = document.createElement("a");
+                       link.href = "/CV.pdf";
+                       link.download = "Bhawani-Prasad-Sah(CV).pdf";
+                       document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                   }}
+            >
               My Resume
-            </a>
+              </button>
 
           </div>
         </div>
