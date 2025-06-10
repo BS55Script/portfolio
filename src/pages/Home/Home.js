@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import Resume from '../../assets/Resume.pdf'
 import Hire from '../../components/Hire/Hire';
 import './Home.css';
 
@@ -56,7 +57,7 @@ const Home = () => {
             <button className="btn btn-hire" onClick={() => setShowHire(true)}>
               Hire Me
             </button>
-            <a className="btn btn-Cv" href='/Resume.pdf' download="BhawaniPrasadsah(CV).pdf" aria-label="Download my resume">
+            <a className="btn btn-Cv" href={Resume} download="BhawaniPrasadsah(CV).pdf" aria-label="Download my resume">
   My Resume
 </a>
 
