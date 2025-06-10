@@ -7,8 +7,7 @@ import Certifications from "./pages/Certifications/Certifications";
 import Community from "./pages/Community/Community";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
-import Hire from "./components/Hire/Hire";
-import Resume from "../src/assets/Resume.pdf" 
+import Hire from "./components/Hire/Hire"; 
 
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
           <Route path="community" element={<Community/>} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="resume" element={<Resume />} />
         </Route>
         <Route path="/hire" element={<Hire />} />
       </Routes>
