@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Resume from '../../assets/Resume.pdf'
 import Hire from '../../components/Hire/Hire';
@@ -33,7 +32,6 @@ const hireMePoints = [
 ];
 
 const Home = () => {
-  const navigate = useNavigate();
   const [showHire, setShowHire] = useState(false);
 
   return (
