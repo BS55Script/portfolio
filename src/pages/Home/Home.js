@@ -59,7 +59,7 @@ const Home = () => {
             <button className="btn btn-hire" onClick={() => setShowHire(true)}>
               Hire Me
             </button>
-            <a className="btn btn-Cv" href={Resume} download="Bhawani.pdf">
+            <a className="btn btn-Cv" href={Resume} download="Bhawani-Prasad-sah(CV).pdf">
               My Resume
             </a>
           </div>
