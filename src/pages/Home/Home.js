@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import CV from '../../assets/docs/CV.pdf';
 import Hire from '../../components/Hire/Hire';
 import './Home.css';
 
@@ -58,9 +57,11 @@ const Home = () => {
             <button className="btn btn-hire" onClick={() => setShowHire(true)}>
               Hire Me
             </button>
-            <a className="btn btn-Cv" href={CV} download="Bhawani-Prasad-sah(CV).pdf">
+            <a
+             className="btn btn-Cv"href="/CV.pdf" download="Bhawani-Prasad-Sah(CV).pdf">
               My Resume
             </a>
+
           </div>
         </div>
       </div>
