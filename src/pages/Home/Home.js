@@ -75,7 +75,7 @@ const Home = () => {
             <div className="about-text">
               <h1>INTRODUCING</h1>
               <p>
-                Hello, I’m <strong>Bhawani Prasad Sah</strong>, an <strong>IT Engineer</strong>, <strong>AWS Certified Solutions Architect – Associate</strong>, and <strong>MERN Stack Developer</strong>. I’m passionate about technology and cloud computing, with hands-on experience in building scalable applications and deploying cloud solutions.
+                Hello, I’m <strong>Bhawani Prasad Sah</strong>, an <strong>IT Engineer</strong>, <strong>AWS Certified Solutions Architect – Associate</strong>, and <strong>MERN Stack Developer</strong>. I’m passionate about technology and cloud computing, with hands-on experience in building scalable applications and deploying on cloud.
                 <br /><br />
                 Beyond tech, I serve as <strong>Secretary of Blood for Nepal</strong>, where I lead several impactful programs such as <em>Aau Ragt Ka Kura Garau</em> and <em>Aau Ragt Ka Kura Bujhau</em>, focused on educating and encouraging blood donation. I actively involve youths in building a healthy blood donor family, fostering community engagement and life-saving awareness.
                 <br /><br />
