@@ -24,7 +24,7 @@ const educationData = [
     level: "Bachelor",
     school: "Nepal College Of Information Technology (NCIT) (Affiliated to Pokhara University)",
     course: "Bachelor's Of Engineering in Information Technology",
-    status: "Passed",
+    status: "Graduated",
   },
 ];
 
