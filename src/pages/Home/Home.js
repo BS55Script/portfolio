@@ -6,15 +6,15 @@ import './Home.css';
 const hireMePoints = [
   {
     title: "Certified Expertise",
-    desc: "AWS Certified Solutions Architect – Associate, skilled in designing fault-tolerant, cost-efficient, and scalable systems on the cloud. Proven experience in deploying and maintaining infrastructure using AWS best practices.",
+    desc: "AWS Certified Solutions Architect – Associate and AWS Certified AI Practitioner, skilled in designing fault-tolerant, cost-efficient, and scalable cloud architectures. Proven experience in deploying, managing, and optimizing infrastructure using AWS best practices, with a strong foundation in AI/ML concepts, responsible AI, and cloud-based AI services.",
   },
   {
     title: "Full-Stack Skills",
-    desc: "Comprehensive experience in full-stack web development using the MERN stack (MongoDB, Express.js, React, Node.js). Capable of handling frontend UI design, backend API development, and database management to build seamless and scalable applications.",
+    desc: "Experienced in full-stack web development using the MERN stack (MongoDB, Express.js, React, Node.js).Skilled in designing responsive and intuitive frontends, developing robust backend APIs, and efficiently managing databases.Capable of building scalable, high-performance web applications with clean architecture, best practices, and seamless user experiences.",
   },
   {
     title: "Problem Solver",
-    desc: "Naturally analytical with a structured approach to breaking down complex technical problems. Known for developing innovative solutions that are both scalable and maintainable, ensuring long-term project success.",
+    desc: "I approach complex technical problems with a clear and analytical mindset and enjoy breaking down complex technical problems into clear, manageable parts, approaching each challenge with a structured mindset.I am skilled at designing, developing, and implementing innovative solutions that are efficient, scalable, maintainable, and reliable for long-term use.",
   },
   {
     title: "Team Player",
@@ -44,7 +44,8 @@ const Home = () => {
               options={{
                 strings: [
                   "Bhawani Prasad Sah",
-                  "an AWS Certified Solution Architect Associate!",
+                  "an AWS Certified Solution Architect Associate ",
+                  "an AWS Certified AI Practitioner",
                   "a MERN Stack Developer!"
                 ],
                 autoStart: true,
@@ -61,7 +62,7 @@ const Home = () => {
              className="btn btn-Cv"
                  onClick={() => {
                       const link = document.createElement("a");
-                       link.href = "/CV.pdf";
+                       link.href = "/resume.pdf";
                        link.download = "Bhawani-Prasad-Sah(CV).pdf";
                        document.body.appendChild(link);
                       link.click();
@@ -84,7 +85,7 @@ const Home = () => {
             <div className="about-text">
               <h1>INTRODUCING</h1>
               <p>
-                Hello, I’m <strong>Bhawani Prasad Sah</strong>, an <strong>IT Engineer</strong>, <strong>AWS Certified Solutions Architect – Associate</strong>, and <strong>MERN Stack Developer</strong>. I’m passionate about technology and cloud computing, with hands-on experience in building scalable applications and deploying on cloud.
+                Hello, I’m <strong>Bhawani Prasad Sah</strong>, an <strong>IT Engineer</strong>, <strong>AWS Certified Solutions Architect – Associate</strong>, <strong>AWS Certified AI Practitioner</strong>,and <strong>MERN Stack Developer</strong>. I’m passionate about technology, cloud computing, and artificial intelligence, with hands-on experience in building scalable full-stack applications, deploying secure and cost-efficient solutions on AWS, and applying AI/ML concepts and services to modern cloud-based systems.
                 <br /><br />
                 Beyond tech, I serve as <strong>Secretary of Blood for Nepal</strong>, where I lead several impactful programs such as <em>Aau Ragt Ka Kura Garau</em> and <em>Aau Ragt Ka Kura Bujhau</em>, focused on educating and encouraging blood donation. I actively involve youths in building a healthy blood donor family, fostering community engagement and life-saving awareness.
                 <br /><br />

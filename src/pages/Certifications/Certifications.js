@@ -21,6 +21,16 @@ const certificationsData = [
     image: "MERN.jpg",
   },
   {
+    title: "AWS Certified AI Practitioner",
+    issuer: "Amazon Web Services",
+    date: "December 2025",
+    description:
+      "This certification demonstrates my comprehensive understanding of AI and machine learning concepts on AWS. It validates my ability to identify, design, and implement AI/ML solutions that meet business requirements and leverage AWS services effectively. I am capable of integrating AI services to build intelligent, scalable, and efficient systems that deliver actionable insights, enhance decision-making, and solve real-world problems.",
+    image: "AWS5.jpg",
+    badgeImage: "AWSB4.png",
+    badgeLink: "https://www.credly.com/earner/earned/badge/8ebd108a-a7e2-4e11-84c2-cd73106065c9",
+  },
+  {
     title: "AWS Academy Graduate- Cloud Architecting",
     issuer: "Amazon Web Services",
     date: "30 January 2025",

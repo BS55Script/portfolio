@@ -3,11 +3,13 @@ import "./Contact.css";
 import { FaLinkedin, FaEnvelope, FaGithub, FaAward } from "react-icons/fa";
 
 const contactDetails = [
-  { label: "Email",
-    value: "bsah5882@gmail.com",
-    link: "https://mail.google.com/mail/?view=cm&fs=1&to=bsah5882@gmail.com",
-    icon: <FaEnvelope />,
-  },
+  {
+  label: "Email",
+  value: "Email Me", // or "Contact"
+  link: "https://mail.google.com/mail/?view=cm&fs=1&to=bsah5882@gmail.com",
+  icon: <FaEnvelope />,
+},
+
   {
     label: "LinkedIn",
     value: "Bhawani Prasad Sah",
