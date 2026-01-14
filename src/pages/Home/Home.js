@@ -62,7 +62,7 @@ const Home = () => {
              className="btn btn-Cv"
                  onClick={() => {
                       const link = document.createElement("a");
-                       link.href = "/resume.pdf";
+                       link.href = "/BPS_CV.pdf";
                        link.download = "Bhawani-Prasad-Sah(CV).pdf";
                        document.body.appendChild(link);
                       link.click();
